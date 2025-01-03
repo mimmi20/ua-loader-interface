@@ -9,7 +9,6 @@ parameters:
 
   paths:
     - src
-    - tests
 
   scanFiles:
     - %currentWorkingDirectory%/vendor/autoload.php
