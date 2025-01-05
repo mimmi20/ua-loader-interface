@@ -17,6 +17,9 @@ use UaResult\Device\DeviceInterface;
 
 interface DeviceLoaderInterface
 {
-    /** @throws Exception\NotFoundException */
+    /**
+     * @return array{device: DeviceInterface, os: string|null}
+     * @throws Exception\NotFoundException
+     */
     public function load(string $key): DeviceInterface;
 }

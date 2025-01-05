@@ -17,6 +17,9 @@ use UaResult\Browser\BrowserInterface;
 
 interface BrowserLoaderInterface
 {
-    /** @throws Exception\NotFoundException */
-    public function load(string $key, string $useragent = ''): BrowserInterface;
+    /**
+     * @return array{client: BrowserInterface, engine: string|null}
+     * @throws Exception\NotFoundException
+     */
+    public function load(string $key, string $useragent = ''): array;
 }
