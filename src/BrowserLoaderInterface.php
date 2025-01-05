@@ -19,6 +19,7 @@ interface BrowserLoaderInterface
 {
     /**
      * @return array{client: BrowserInterface, engine: string|null}
+     *
      * @throws Exception\NotFoundException
      */
     public function load(string $key, string $useragent = ''): array;
