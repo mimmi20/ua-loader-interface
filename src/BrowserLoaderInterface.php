@@ -13,15 +13,10 @@ declare(strict_types = 1);
 
 namespace UaLoader;
 
-use Override;
+use UaResult\Browser\BrowserInterface;
 
-interface BrowserLoaderInterface extends SpecificLoaderInterface
+interface BrowserLoaderInterface
 {
-    /**
-     * @return array{0: array{name: string|null, version: string|null, manufacturer: string, type: string, isbot: bool}, 1: string|null}
-     *
-     * @throws Exception\NotFoundException
-     */
-    #[Override]
-    public function load(string $key, string $useragent = ''): array;
+    /** @throws Exception\NotFoundException */
+    public function load(string $key, string $useragent = ''): BrowserInterface;
 }

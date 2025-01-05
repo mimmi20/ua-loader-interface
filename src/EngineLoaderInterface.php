@@ -13,15 +13,10 @@ declare(strict_types = 1);
 
 namespace UaLoader;
 
-use Override;
+use UaResult\Engine\EngineInterface;
 
-interface EngineLoaderInterface extends SpecificLoaderInterface
+interface EngineLoaderInterface
 {
-    /**
-     * @return array{name: string|null, version: string|null, manufacturer: string}
-     *
-     * @throws Exception\NotFoundException
-     */
-    #[Override]
-    public function load(string $key, string $useragent = ''): array;
+    /** @throws Exception\NotFoundException */
+    public function load(string $key, string $useragent = ''): EngineInterface;
 }
