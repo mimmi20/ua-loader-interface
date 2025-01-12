@@ -22,7 +22,7 @@
   "require": {
     "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
     "ext-mbstring": "*",
-    "mimmi20/ua-result": "^10.0.2"
+    "mimmi20/ua-result": "^11.0.0"
   },
   "require-dev": {
     "ext-ctype": "*",
