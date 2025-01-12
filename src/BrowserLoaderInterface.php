@@ -13,14 +13,10 @@ declare(strict_types = 1);
 
 namespace UaLoader;
 
-use UaResult\Browser\BrowserInterface;
+use UaLoader\Data\ClientDataInterface;
 
 interface BrowserLoaderInterface
 {
-    /**
-     * @return array{client: BrowserInterface, engine: string|null}
-     *
-     * @throws Exception\NotFoundException
-     */
-    public function load(string $key, string $useragent = ''): array;
+    /** @throws Exception\NotFoundException */
+    public function load(string $key, string $useragent = ''): ClientDataInterface;
 }

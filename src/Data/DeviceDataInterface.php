@@ -11,12 +11,15 @@
 
 declare(strict_types = 1);
 
-namespace UaLoader;
+namespace UaLoader\Data;
 
-use UaLoader\Data\DeviceDataInterface;
+use UaResult\Device\DeviceInterface;
 
-interface DeviceLoaderInterface
+interface DeviceDataInterface
 {
-    /** @throws Exception\NotFoundException */
-    public function load(string $key): DeviceDataInterface;
+    /** @throws void */
+    public function getDevice(): DeviceInterface;
+
+    /** @throws void */
+    public function getOs(): string | null;
 }
