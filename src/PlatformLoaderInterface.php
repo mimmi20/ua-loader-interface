@@ -19,4 +19,7 @@ interface PlatformLoaderInterface
 {
     /** @throws Exception\NotFoundException */
     public function load(string $key, string $useragent = ''): OsInterface;
+
+    /** @throws Exception\NotFoundException */
+    public function loadFromOs(\UaData\OsInterface $os, string $useragent = ''): OsInterface;
 }
