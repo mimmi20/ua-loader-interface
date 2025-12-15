@@ -19,4 +19,7 @@ interface EngineLoaderInterface
 {
     /** @throws Exception\NotFoundException */
     public function load(string $key, string $useragent = ''): EngineInterface;
+
+    /** @throws Exception\NotFoundException */
+    public function loadFromEngine(\UaData\EngineInterface $engine, string $useragent = ''): EngineInterface;
 }
