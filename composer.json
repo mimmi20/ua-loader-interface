@@ -23,7 +23,7 @@
     "php": "~8.4.0 || ~8.5.0",
     "ext-mbstring": "*",
     "mimmi20/ua-data-interface": "^1.0.0",
-    "mimmi20/ua-result": "^15.0.0"
+    "mimmi20/ua-result": "^15.0.1"
   },
   "require-dev": {
     "ext-ctype": "*",
