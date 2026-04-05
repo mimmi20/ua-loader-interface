@@ -20,10 +20,10 @@
     "source": "https://github.com/mimmi20/ua-loader-interface"
   },
   "require": {
-    "php": "~8.4.0 || ~8.5.0 || ~8.6.0",
+    "php": "~8.5.0 || ~8.6.0",
     "ext-mbstring": "*",
     "mimmi20/ua-data-interface": "^1.0.1",
-    "mimmi20/ua-result": "^15.0.1"
+    "mimmi20/ua-result": "^16.0.0"
   },
   "require-dev": {
     "ext-ctype": "*",
